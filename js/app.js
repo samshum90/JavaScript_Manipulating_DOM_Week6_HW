@@ -77,7 +77,7 @@ function attachCity(city, list){
     
 };
 
-const handleDeleteAll = function(event){
+const handleDeleteAll = function(){
     const cityList = document.querySelector('#city_list'); 
     cityList.innerHTML = '';
 }

@@ -14,10 +14,36 @@ body{
     background-color: var(--lightblue);
 
 }
-.form-list {
+ul {
     display: flex;
     flex-direction: row;
 }
+
+label {
+    display: flex;
+    flex-direction: row;
+    line-height: 26px;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+    text-align: right;
+    width: 200px;
+  }
+  
+select{
+    height: 25px;
+    margin-left: 10px;
+    width: 110px;
+}
+input {
+    height: 15px;
+    margin-left: 10px;
+  }
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+}
+
 .city-list-item {
     color: var(--orange);
     background-color: var(--blue);
@@ -25,14 +51,10 @@ body{
     padding: 0px 20px;
     margin: 10px;
     list-style: none;
+
 }
 
 .city-item {
     color: var(--orange);
-
-}
-
-.form-list{
-    display: flex;
 
 }

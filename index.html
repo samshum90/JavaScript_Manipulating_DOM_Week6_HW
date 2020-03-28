@@ -14,12 +14,13 @@
     <div>
         <form id="new_city_form">
             <div id="form-wrapper">
-                <label for="city_name">City Name:</label>
+                <label for="city_name">City Name:
                 <input type="text" name="city_name" id="city_name">
+            </label>
             </div>
 
             <div class="form-item">
-                <label for="continent_name">Continent:</label>
+                <label for="continent_name">Continent:
                     <select name="continent_name" id="continent_name">
                     <option value="Europe">Europe</option>
                     <option value="Asia">Asia</option>
@@ -29,21 +30,27 @@
                     <option value="Antarctica">Antarctica</option>
                     <option value="Australia">Australia</option>
                 </select>
+            </label>
             </div>
 
             <div class="form-item">
-                <label for="population">Population:</label>
+                <label for="population">Population:
                 <input type="number" name="population" id="population">
+            </label>
             </div>
 
             <div class="form-item">
-                <label for="currency">Currency:</label>
+                <label for="currency">Currency:
                 <input type="text" name="currency" id="currency">
+            </label>
             </div>
+            <div class="button-container">
             <input type="submit" value="save"/>
+            <button id="delete-all">Delete All</button>
+        </div>
         </form>
 
-        <button id="delete-all">Delete All</button>
+        
         
         <h2>City List:</h2>
     <div class="form-list">
