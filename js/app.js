@@ -44,6 +44,11 @@ newItemForm.addEventListener('submit', function (event) {
 
 };
 
+const handleButtonClick = function () {
+    const watchList = document.querySelector('ul');
+    watchList.innerHTML = '';
+  }
+
 
 function attachCity(city, list){
     const newCity = document.createElement('li');
@@ -51,24 +56,28 @@ function attachCity(city, list){
     list.appendChild(newCity);
 
     const city_name = document.createElement('h3');
+    city_name.classList.add('city-item');
     city_name.textContent = `${city.city_name}`;
     newCity.appendChild(city_name);
 
     const continent_name = document.createElement('p');
+    continent_name.classList.add('city-item');
     continent_name.textContent = `${city.continent_name}`;
     newCity.appendChild(continent_name);
 
     const population = document.createElement('p');
+    population.classList.add('city-item');
     population.textContent = `${city.population}`;
     newCity.appendChild(population);
 
     const currency = document.createElement('p');
+    currency.classList.add('city-item');
     currency.textContent = `${city.currency.toUpperCase()}`;
     newCity.appendChild(currency);
     
 };
 
-const handleDeleteAll = function(){
+const handleDeleteAll = function(event){
     const cityList = document.querySelector('#city_list'); 
-    cityList.innerHtml = '';
-};
+    cityList.innerHTML = '';
+}

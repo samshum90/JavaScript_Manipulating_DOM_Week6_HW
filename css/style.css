@@ -14,9 +14,25 @@ body{
     background-color: var(--lightblue);
 
 }
-
+.form-list {
+    display: flex;
+    flex-direction: row;
+}
 .city-list-item {
     color: var(--orange);
-    
+    background-color: var(--blue);
+    border: double 1px var(--yellow); 
+    padding: 0px 20px;
+    margin: 10px;
+    list-style: none;
+}
+
+.city-item {
+    color: var(--orange);
+
+}
+
+.form-list{
+    display: flex;
 
 }
