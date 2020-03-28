@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>City Manager</title>
+</head>
+
+<body>
+    <h1>Cities</h1>
+    <div>
+        <form id="new_city_form">
+            <div id="form-wrapper">
+                <label for="city_name">City Name:</label>
+                <input type="text" name="city_name" id="city_name">
+            </div>
+
+            <div class="form-item">
+                <label for="continent_name">Continent:</label>
+                    <select name="continent_name" id="continent_name">
+                    <option value="Europe">Europe</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Africa">Africa</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                    <option value="Antarctica">Antarctica</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="population">Population:</label>
+                <input type="number" name="population" id="population">
+            </div>
+
+            <div class="form-item">
+                <label for="currency">Currency:</label>
+                <input type="text" name="currency" id="currency">
+            </div>
+            <input type="submit" value="save"/>
+        </form>
+
+        <button id="delete-all">Delete All</button>
+        
+    <div class="form-list">
+        <h2>City List</h2>
+        <ul id="city_list"></ul>
+    </div>
+</body>
+</div>
+</body>
+
+</html>

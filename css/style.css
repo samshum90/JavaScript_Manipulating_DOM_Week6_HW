@@ -1,0 +1,22 @@
+* {
+    color: var(--black);
+}
+
+:root {
+    --black: #31393c;
+    --blue: #2176ff;
+    --lightblue: #33a1fd;
+    --yellow: #fdca40;
+    --orange: #f79824;
+}
+
+body{
+    background-color: var(--lightblue);
+
+}
+
+.city-list-item {
+    color: var(--orange);
+    
+
+}
